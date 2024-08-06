@@ -1,49 +1,190 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <title>Website with in Login & Registration</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <header>
-        <h2 class="logo">Belay</h2>
-        <nav class="navigation">
-            <a href="#">Home</a>
-            <a href="#">About</a>
-            <a href="#">Services</a>
-            <a href="#">Contact</a>
-            <button class="btnLogin-popup">Login</button>
-        </nav>
-    </header>
-
-    <div class="wrapper">
-        <div class="form-box login">
-            <h2>Login</h2>
-            <form action="#">
-                <div class="input-box">
-                    <span class="icon"><icon-icon name="mail"></icon-icon></span>
-                    <input type="email" required>
-                    <label>Email</label>
-                </div>
-                <div class="input-box">
-                    <span class="icon"><icon-icon name="lock-closed"></icon-icon></span>
-                    <input type="password" required>
-                    <label>Password</label>
-                </div>
-                <div class="remember-forgot">
-                    <label><input="checkbox" >Remember me</label>
-                    <a href="#" >Forgot Password</a>
-                </div>
-                <button type="submit" class="btn">Login</button>
-                <div class="login-register">
-                    <p>Don't have an account? <a href="#" class="register-link">Register </a></p>
-                </div>
-            </form>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>University Websign design</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css"
+      integrity="sha384-BY+fdrpOd3gfeRvTSMT+VUZmA728cfF9Z2G42xpaRkUGu2i3DyzpTURDo5A6CaLK"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://kit.fontawesome.com/9bb0553f1c.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body class="m-0 p-0 font-sans">
+    <section class="min-h-screen w-full bg-[url('images/banner.png')] bg-opacity-70 bg-center bg-cover relative" id="home">
+      <nav class="flex justify-between items-center">
+        <a href="index.html"><img src="images/logo.png" alt="" /></a>
+        <div class="nav-links" id="navLinks">
+          <i class="fa fa-times" onclick="hideMenu()"></i>
+          <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="course.html">COURSE</a></li>
+            <li><a href="blog.html">BLOG</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+          </ul>
         </div>
-    </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+      </nav>
+      <div class="text-box">
+        <h1>World's Biggest University</h1>
+        <p>
+          Creating a website is easy. You just need to learn HTML, CSS, and
+          JavaScript, and you're all set!
+        </p>
+        <a href="" class="hero-btn">Visit Us to know More</a>
+      </div>
+    </section>
+    <section class="course" id="course">
+      <h1>Courses We Offer</h1>
+      <p>We provide a range of courses to suit your needs.</p>
+
+      <div class="row">
+        <div class="course-col">
+          <h1>Intermediate</h1>
+          <p>
+            Our intermediate courses cover essential skills and knowledge to
+            advance your career.
+          </p>
+        </div>
+        <div class="course-col">
+          <h1>Degree</h1>
+          <p>
+            We offer degree programs designed to give you a comprehensive
+            education in your chosen field.
+          </p>
+        </div>
+        <div class="course-col">
+          <h1>Post Graduate</h1>
+          <p>
+            Our post-graduate programs are perfect for those looking to
+            specialize further and advance their knowledge.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="campus">
+      <h1>Our Global Campus</h1>
+      <p>Explore our campuses around the world.</p>
+
+      <div class="row">
+        <div class="campus-col">
+          <img src="images/london.png" alt="" />
+          <div class="layer">
+            <h3>LONDON</h3>
+          </div>
+        </div>
+        <div class="campus-col">
+          <img src="images/newyork.png" alt="" />
+          <div class="layer">
+            <h3>NEWYORK</h3>
+          </div>
+        </div>
+        <div class="campus-col">
+          <img src="images/washington.png" alt="" />
+          <div class="layer">
+            <h3>WASHINGTON</h3>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="facilities">
+      <h1>Our Facilities</h1>
+      <p>Discover the facilities that make our university stand out.</p>
+      <div class="row">
+        <div class="facilities-col">
+          <img src="images/library.png" alt="Library" />
+          <h3>World-Class Library</h3>
+          <p>
+            Our library offers an extensive collection of books and resources
+            for your studies.
+          </p>
+        </div>
+        <div class="facilities-col">
+          <img src="images/basketball.png" alt="Playground" />
+          <h3>Largest Playground</h3>
+          <p>
+            Enjoy our large and well-equipped sports grounds for various
+            activities.
+          </p>
+        </div>
+        <div class="facilities-col">
+          <img src="images/cafeteria.png" alt="Cafeteria" />
+          <h3>Tasty and Healthy Food</h3>
+          <p>Our cafeteria serves a variety of healthy and delicious meals.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="testimonials">
+      <h1>What Our Students Say</h1>
+      <p>Hear from our students about their experiences.</p>
+      <div class="row">
+        <div class="testimonials-col">
+          <img src="images/user1.jpg" alt="Christine Berkley" />
+          <div>
+            <p>
+              This university has changed my life. The education is top-notch,
+              and the facilities are excellent.
+            </p>
+            <h3>Christine Berkley</h3>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+          </div>
+        </div>
+        <div class="testimonials-col">
+          <img src="images/user2.jpg" alt="David Byer" />
+          <div>
+            <p>
+              I had a fantastic experience. The staff and resources are
+              outstanding.
+            </p>
+            <h3>David Byer</h3>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star-half"></i>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta">
+      <h1>
+        Enroll For Our Various Online Courses <br />Anywhere From The World
+      </h1>
+      <a href="contact.html" class="hero-btn">CONTACT</a>
+    </section>
+
+    <section class="footer">
+      <h4>About Us</h4>
+      <p>
+        We are dedicated to providing quality education and facilities. Our
+        university is known for its excellent academic programs and vibrant
+        campus life.
+      </p>
+      <div class="icons">
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-twitter"></i>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-linkedin"></i>
+      </div>
+      <p>Made with <i class="fa-regular fa-heart"></i> by Easy Tutorials</p>
+    </section>
 
     <script src="script.js"></script>
-    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-</body>
+  </body>
 </html>

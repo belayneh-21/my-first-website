@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>University Websign design</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css"
+      integrity="sha384-BY+fdrpOd3gfeRvTSMT+VUZmA728cfF9Z2G42xpaRkUGu2i3DyzpTURDo5A6CaLK"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://kit.fontawesome.com/9bb0553f1c.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <section class="sub-header" id="home">
+      <nav>
+        <a href="index.html"><img src="images/logo.png" alt="" /></a>
+        <div class="nav-links" id="navLinks">
+          <i class="fa fa-times" onclick="hideMenu()"></i>
+          <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="course.html">COURSE</a></li>
+            <li><a href="blog.html">BLOG</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+          </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+      </nav>
+      <h1>Our Certificate & Online Programs For 2024</h1>
+    </section>
+
+    <section class="blog-content">
+      <div class="row">
+        <div class="blog-left">
+          <img src="images/certificate.jpg" />
+          <h2>Our Certificate & Online Programs For 2024</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum
+            doloribus error harum quos nobis eum minus dolores obcaecati omnis
+            assumenda fuga, dignissimos possimus impedit cum suscipit, deleniti
+            repellendus quis ea.
+          </p>
+          <br />
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis
+            nobis deleniti nisi quod, aspernatur nihil commodi dolores odio
+            corrupti exercitationem, quia pariatur ullam consectetur eos?
+            Sapiente aut dicta quod cumque. Lorem ipsum dolor sit amet
+            consectetur adipisicing elit. Quos nam reiciendis rem magni placeat
+            iste commodi aperiam quasi illo quibusdam doloremque molestias sunt
+            ipsa earum nostrum accusantium, nobis fuga qui.
+          </p>
+          <br />
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat
+            nemo culpa ullam iste reiciendis molestias possimus eaque quidem
+            adipisci quos. Perspiciatis adipisci sed incidunt ipsam aliquam
+            doloribus iste saepe explicabo?Lorem ipsum dolor sit amet
+            consectetur adipisicing elit. Quia, quo at cumque inventore facilis
+            tenetur eveniet, corporis,
+          </p>
+          <br />
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur
+            optio nesciunt accusantium, rerum dolore saepe delectus ut!
+            Repudiandae eligendi illum excepturi ab similique qui sint ipsum, ut
+            recusandae, nisi dolorem.
+          </p>
+
+          <div class="comment-box">
+            <h3>Leave a comment</h3>
+            <form action="#" class="comment-form">
+              <input type="text" placeholder="Enter Name" />
+              <input type="email" placeholder="Enter Email" />
+              <textarea rows="5" placeholder="Your Message"></textarea>
+              <button type="submit" class="hero-btn red-btn">
+                POST COMMENT
+              </button>
+            </form>
+          </div>
+        </div>
+        <div class="blog-right">
+          <h3>Post Catagories</h3>
+          <div>
+            <span>Business Analaytics</span>
+            <span>21</span>
+          </div>
+          <div>
+            <span>Data Science</span>
+            <span>28</span>
+          </div>
+          <div>
+            <span>Machine Learning</span>
+            <span>15</span>
+          </div>
+          <div>
+            <span>Computer Science</span>
+            <span>34</span>
+          </div>
+          <div>
+            <span>AutoCAD</span>
+            <span>42</span>
+          </div>
+          <div>
+            <span>Journalism</span>
+            <span>21</span>
+          </div>
+          <div>
+            <span>Commerce</span>
+            <span>30</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="footer">
+      <h4>About Us</h4>
+      <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Architecto
+        modi in temporibus odio, harum, alias ipsum obcaecati recusandae labore
+        nisi<br />
+        qui omnis fugiat repellendus praesentium, consectetur dolor. Accusamus,
+        veniam velit?
+      </p>
+      <div class="icons">
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-twitter"></i>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-linkedin"></i>
+      </div>
+      <p>Made with <i class="fa-regular fa-heart"></i> by Easy Tutorials</p>
+    </section>
+
+    <script>
+      var items = document.getElementById("navLinks");
+      function showMenu() {
+        items.style.right = "0px";
+      }
+      function hideMenu() {
+        items.style.right = "-200px";
+      }
+    </script>
+  </body>
+</html>
